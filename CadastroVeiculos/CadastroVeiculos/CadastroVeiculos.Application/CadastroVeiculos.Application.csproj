@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CadastroVeiculos.Domain\CadastroVeiculos.Domain.csproj" />
+    <ProjectReference Include="..\CadastroVeiculos.Infra.Data.Context\CadastroVeiculos.Infra.Data.Context.csproj" />
+    <ProjectReference Include="..\CadastroVeiculos.Infra.Data.Repository\CadastroVeiculos.Infra.Data.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,41 @@
+<h1>Cadastro de Veículo</h1>
+<form #f (ngSubmit)="salvar(f)">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label>Placa</label>
+        <input type="text" [(ngModel)]="veiculo.placa" name="placa" maxlength="7" class="form-control"/>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label>Renavam</label>
+        <input type="text" [(ngModel)]="veiculo.renavam" name="renavam" maxlength="11" class="form-control"/>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label>Nome</label>
+        <input type="text" [(ngModel)]="proprietario.nome" name="nome" maxlength="50" class="form-control"/>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label>CPF</label>
+        <input type="text" [(ngModel)]="proprietario.cpf" name="cpf" maxlength="11" class="form-control"/>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <input type="submit" value="Salvar" class="btn btn-primary" />
+      <a [routerLink]="['/veiculos']" class="btn btn-default">Cancelar</a>
+    </div>
+  </div>
+</form>
